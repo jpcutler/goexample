@@ -52,7 +52,7 @@ func main() {
 
 	line, ok := <-linesSuccessful
 
-	if !ok {
+	if ok {
 		fmt.Println(line)
 	} else {
 		time.After(1 * time.Second)
